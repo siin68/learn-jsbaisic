@@ -1,6 +1,6 @@
 function User(firstname, lastname, age) {
   this.firstname = firstname;
-  this.lastname = lastname; 
+  this.lastname = lastname;
   this.age = age;
   this.getfullname = function () {
     return `${this.firstname} ${this.lastname}`;
@@ -8,7 +8,7 @@ function User(firstname, lastname, age) {
 }
 
 // Thêm thuộc tính vào prototype
-User.prototype.classname = "lop11"; 
+User.prototype.classname = "lop 12";
 
 // Thêm phương thức vào prototype
 User.prototype.ngaysinh = function () {
@@ -18,5 +18,5 @@ User.prototype.ngaysinh = function () {
 const tacgia = new User("camtho", "Vothi", 20);
 const hocvien = new User("thin", "tranhoang", 25);
 
-console.log(hocvien.classname);   // ✅ Output: "lop11"
-console.log(tacgia.ngaysinh());   // ✅ Output: 2005 (2025 - 20)
+console.log(tacgia.classname); // ✅ Output: "lop11"
+console.log(tacgia.ngaysinh()); // ✅ Output: 2005 (2025 - 20)
